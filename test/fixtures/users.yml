@@ -6,4 +6,4 @@ michael:
 archer:
   name: Sterling Archer
   email: duchess@example.gov
-  password_digest: <%= User.digest("ArrowOliverQueen") %>
+  password_digest: <%= User.digest("password") %>
