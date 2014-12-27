@@ -15,7 +15,7 @@ class UserSignupTest < ActionDispatch::IntegrationTest
     assert_template "users/new"
   end
   
-  test "valid signup information with account information" do
+  test "valid signup information with account activation" do
     get signup_path
     assert_difference "User.count", 1 do
       post users_path, user: {name:  "Example User",
